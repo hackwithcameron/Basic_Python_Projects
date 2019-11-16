@@ -1,6 +1,6 @@
 import sqlite3
 
-# conn = sqlite3.connect("txt_doc.db")
+
 fileList = ('information.docx', 'Hello.txt', 'myImage.png',
             'myMovie.mpg', 'World.txt', 'data.pdf', 'myPhoto.jpg')
 
@@ -28,7 +28,7 @@ def database():
     conn.close()
 
 
-def enter_data(txt_lst):
+def enter_data(txt_lst):  # Enter data into tables using a for loop
     conn = sqlite3.connect("doc.db")
 
     with conn:
