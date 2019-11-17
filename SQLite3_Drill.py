@@ -47,7 +47,7 @@ def get_txt():
         cur.execute("SELECT * FROM tbl_txt_doc")
         var = cur.fetchall()
         for i in (range(len(var))):
-            msg = "Text file: {}".format(txt_lst[i])
+            msg = "Text file: {}".format(var[i])
             print(msg)
     conn.close()
 
